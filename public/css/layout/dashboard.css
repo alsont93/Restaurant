@@ -1,0 +1,22 @@
+.dashboard {
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: none; /* Ukryte przed zalogowaniem */
+}
+
+.dashboard-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.dashboard-nav a {
+    text-decoration: none;
+    color: #e57373;
+    font-weight: bold;
+}
+
+.dashboard-content {
+    margin-top: 20px;
+}

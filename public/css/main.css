@@ -1,0 +1,24 @@
+@import "base/reset.css";
+@import "base/typography.css";
+@import "base/variables.css";
+
+@import "layout/header.css";
+@import "layout/footer.css";
+@import "layout/reservation.css";
+@import "layout/dashboard.css";
+
+@import "components/button.css";
+@import "components/cart.css";
+@import "components/hero.css";
+@import "components/products.css";
+@import "components/about.css";
+@import "components/contact.css";
+@import "components/instagram.css";
+@import "components/form.css";
+@import "components/modal.css";
+@import "components/admin.css";
+
+
+@import "pages/home.css";
+@import "pages/menu.css";
+

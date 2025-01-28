@@ -1,0 +1,16 @@
+.cta-button {
+    background-color: #e57373;
+    border: none;
+    color: white;
+   
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    
+}
+
+a{
+    text-decoration: none;
+    color:aliceblue;
+}

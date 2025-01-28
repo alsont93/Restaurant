@@ -1,0 +1,14 @@
+.contact-center form, .contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name-group {
+    display: flex;
+    gap: 10px;
+}
+
+.name-group input {
+    flex: 1;
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRUP! Nie gadaj</title>
+
+    <!-- Leaflet.js CSS and JavaScript for the map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="opening-hours">
+        Mon - Sat: 9AM - 9PM &nbsp; 
+    </div>
+
+    <div class="floating-logo">
+        <h1>CHRUP! <span>Nie gadaj</span></h1>
+    </div>
+
+    <!-- Dodanie głównego kontenera -->
+    <div class="content">
+        <!-- Nagłówek -->
+        <header class="main-header">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="#contact-section">RESERVATION</a></li>
+                </ul>
+            </nav>
+          
+            <div class="admin-icon" onclick="openAdminLoginModal()">🔒</div>
+
+        </header>
+
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close close-cart">&times;</span>
+                <h2>Twój koszyk</h2>
+                <div id="cart-items"></div>
+                <p id="cart-total">Łączna cena: 0.00 zł</p>
+                <button onclick="checkout()">Zamów</button>
+            </div>
+        </div>
+
+      
+
+        <!-- Sekcja powitalna -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Get It While It's Hot</h1>
+                <p>Chrupniesz z nami?</p>
+                <button class="cta-button"><a href="menu.html">MENU</a></button>
+            </div>
+        </section>
+
+        <!-- Sekcja O nas -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p> Chrup, nie gadaj... i poczuj, jak każdy kęs opowiada własną historię <br>
+                To nie tylko smak, ale cała narracja zapisana w kolorach, fakturach i aromatach, która rozbudza zmysły i zaprasza na kolejny rozdział pełen przygód.
+            </p>
+               
+        </section>
+
+
+        <section id="parallax-section" class="parallax-section">
+            <div class="parallax-content">
+               
+            </div>
+        </section>
+
+        <!-- Sekcja Menu -->
+        <section id="menu" class="products">
+            <h2>Our Menu</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="menu.html#bao"><img src="images/alltime1.jpg" alt="Dish 1"></a>
+                    <div class="product-overlay">BAO</div>
+                </div>
+                <div class="product-item">
+                    <a href="menu.html#zapiekanki"><img src="images/alltime2.jpg" alt="Dish 2"></a>
+                    <div class="product-overlay">ZAPIEKANKI</div>
+                </div>
+                <div class="product-item">
+                    <a href="menu.html#frytki"><img src="images/alltime3.jpg" alt="Dish 3"></a>
+                    <div class="product-overlay">DODATKI</div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+
+        <section class="instagram-section">
+            <h2><a href="https://www.instagram.com/chrup_niegadaj/" target="_blank">FOLLOW US #CHRUPNIEGADAJ</a></h2>
+            <div class="instagram-grid">
+
+            <a href="https://www.instagram.com/p/C6dWgd3MWVC/" target="_blank">
+                <img src="images/insta11.jpg" alt="Instagram photo 1">
+                <div class="instagram-overlay">Dołącz do #CHRUPniegadaj na Instagramie</div>
+            </a> 
+            <a href="https://www.instagram.com/p/C5JFCJvMNlw/" target="_blank">
+                <img src="images/insta16.jpg" alt="Instagram photo 2">
+                <div class="instagram-overlay">Dołącz do #CHRUPniegadaj na Instagramie</div>
+                </a>
+
+            <a href="https://www.instagram.com/p/C6raAOtsO0b/" target="_blank">
+                <img src="images/insta3.jpg" alt="Instagram photo 3">
+                <div class="instagram-overlay">Dołącz do #CHRUPniegadaj na Instagramie</div>
+            </a>
+  
+            <a href="https://www.instagram.com/p/C6ZaqaLM3zA/" target="_blank">
+                <img src="images/insta4.jpg" alt="Instagram photo 4">
+                <div class="instagram-overlay">Dołącz do #CHRUPniegadaj na Instagramie</div>
+            </a>
+                 
+                <a href="https://www.instagram.com/p/C5d6f2jM5Yu/" target="_blank">
+                <img src="images/insta5.jpg" alt="Instagram photo 5">
+                <div class="instagram-overlay">Dołącz do #CHRUPniegadaj na Instagramie</div>
+            </a>
+
+            <a href="https://www.instagram.com/p/C5wMq2kMp0Q/" target="_blank">
+                <img src="images/insta6.jpg" alt="Instagram photo 6">
+                <div class="instagram-overlay">Dołącz do #CHRUPniegadaj na Instagramie</div>
+            </a>
+
+            <a href="https://www.instagram.com/p/C8P1OeqMdjG/" target="_blank">
+                <img src="images/insta7.jpg" alt="Instagram photo 7">
+                <div class="instagram-overlay">Dołącz do #CHRUPniegadaj na Instagramie</div>
+            </a>
+
+            <a href="https://www.instagram.com/p/C8C-X9gsG-x/" target="_blank">
+                <img src="images/insta8.jpg" alt="Instagram photo 8">
+                <div class="instagram-overlay">Dołącz do #CHRUPniegadaj na Instagramie</div>
+            </a>
+
+            <a href="https://www.instagram.com/p/C51YwknM-4Z/" target="_blank">
+                <img src="images/insta19.jpg" alt="Instagram photo 9">
+                <div class="instagram-overlay">Dołącz do #CHRUPniegadaj na Instagramie</div>
+            </a>
+
+            <a href="https://www.instagram.com/p/C71tq5psanr/" target="_blank">
+                <img src="images/insta10.jpg" alt="Instagram photo 10">
+                <div class="instagram-overlay">Dołącz do #CHRUPniegadaj na Instagramie</div>
+            </a>
+            </div>
+        </section>
+
+
+        <!-- Stopka -->
+   <!-- Przycisk i modal na rezerwację -->
+   <section id="contact-section" class="contact-section">
+    <div class="contact-column">
+        <h3>Contact</h3>
+        <p>kontakt@chrupniegadaj.com<br>733 555 309</p>
+        <p>Leszczyńska 20<br>Bielsko-Biała</p>
+    </div>
+    <div class="center-column">
+        <h2>#CHRUPniegadaj</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61554590644794">Facebook</a> • 
+            <a href="https://www.instagram.com/chrup_niegadaj/">Instagram</a>
+        </div>
+        <button class="reservation-button" onclick="openReservationModal()">Reservation</button>
+    </div>
+    <div class="service-column">
+        <h3>Service</h3>
+        <p>Mon - Sat: 9am - 9pm<br>Sun: closed</p>
+    </div>
+</section>
+
+
+<footer>
+    <p>&copy; 2024 Restaurant. All rights reserved. | 
+        <a href="javascript:void(0);" onclick="openPrivacyModal()" class="privacy-link">Polityka prywatności</a>
+    </p>
+</footer>
+
+
+
+
+<!-- Modal na rezerwację -->
+<div id="reservation-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeReservationModal()">&times;</span>
+        <h2>Rezerwacja stolika</h2>
+        <form id="reservation-form">
+            <label for="name">Imię i nazwisko:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefon:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="date">Data rezerwacji:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Godzina rezerwacji:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Liczba gości:</label>
+            <input type="number" id="guests" name="guests" required>
+
+            <button type="submit">Zarezerwuj</button>
+        </form>
+        <p id="reservation-message"></p>
+    </div>
+</div>
+
+<!-- Modal dla logowania admina -->
+<div id="admin-login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeAdminLoginModal()">&times;</span>
+        <h2>Admin Login</h2>
+        <form id="admin-login-form">
+            <label for="admin-username">Username:</label>
+            <input type="text" id="admin-username" name="username" required>
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" name="password" required>
+            <button type="submit">Log In</button>
+        </form>
+        <p id="admin-login-message"></p>
+    </div>
+</div>
+
+
+<!-- Admin Dashboard -->
+<div id="admin-dashboard" class="dashboard" style="display: none;">
+    <nav class="dashboard-nav">
+        <ul>
+            <li><a href="#" onclick="showReservations()">Reservations</a></li>
+            <li><a href="#" onclick="showMenu()">Menu Management</a></li>
+            <li><a href="#" onclick="logoutAdmin()">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="dashboard-content" id="dashboard-content">
+        <h2>Welcome to Admin Panel</h2>
+        <p>Select a section to manage.</p>
+    </div>
+</div>
+
+<!-- Modal dla Polityki Prywatności -->
+<div id="privacy-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closePrivacyModal()">&times;</span>
+        <h2>Polityka Prywatności</h2>
+        <p>§1. POSTANOWIENIA OGÓLNE</p>
+        <p>Niniejsza Polityka Prywatności obowiązuje osoby korzystające ze strony...</p>
+        <p>Administrator danych: Meta International Sp. z o.o.</p>
+        <p>Więcej informacji znajdziesz w pełnej treści polityki prywatności.</p>
+        <p>§4.COOKIES</p>
+        <p>Cookies są przekazywane do przeglądarek internetowych i następnie są przechowywane w pamięci urządzeń i odczytywane przez serwer przy każdorazowym połączeniu ze Stroną Internetową.
+            Zaznaczamy, że zapis cookies nie umożliwia Nam dostępu do Twojego prywatnego urządzenia ani odczytywania innych danych niż zapisane w cookies.
+            Korzystamy z tzw. cookies technicznych, które umożliwiają prawidłowe wykorzystywanie transmisji komunikatu oraz zapamiętywanie Twoich ustawień i do tworzenia prostych statystyk Serwisu.
+            Korzystamy z cookies i technologii do zbierania danych, które pomagają nam analizować ruch na Stronie Internetowej. Dzięki temu możemy optymalizować jej działanie, udoskonalać rozwiązania, które cieszą się największym zainteresowaniem oraz wyświetlać dedykowane wiadomości i oferty. Możesz wyrazić zgodę, nie wyrazić zgody, cofnąć ją lub zarządzać ustawieniami klikając tutaj.
+            Korzystamy z następujących cookies:</p>
+    </div>
+</div>
+
+<!-- Wstawienie skryptu JavaScript -->
+<script src="js/reservation.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/login.js"></script>
+<script src="js/privacy.js"></script>
+
+
+         
+    
+<!-- Sekcja mapy -->
+<section class="map-section">
+    <div id="map"></div>
+</section>
+
+<!-- Wstawienie skryptu JavaScript -->
+<!-- <script src="js/reservation.js"></script>
+<script src="js/scripts.js"></script> -->
+  
+
+</body>
+</html>

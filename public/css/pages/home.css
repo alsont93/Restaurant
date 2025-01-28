@@ -1,0 +1,72 @@
+.hero {
+    background-image: url('../../images/nowebg1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0; 
+    color: #e57373;
+}
+
+.about {
+    padding: 150px 0px; 
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', sans-serif; 
+}
+
+.parallax-section {
+    background-image: url('../../images/insta3.jpg'); 
+    background-size: cover;
+    background-position: center 20%; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; 
+    font-family: 'Lucida Sans Unicode', sans-serif; 
+}
+
+/* Sekcja produktów w ogólnym stylu */
+.products {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Styl nagłówka dla sekcji produktów */
+.products h2 {
+    font-size: 1.2rem;
+    color: #e57373;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 30px;
+    font-weight: normal;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.instagram-section {
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    color: #e57373;
+}
+
+.map-section {
+    padding: 50px 0;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}

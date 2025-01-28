@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - CHRUP! Nie gadaj</title>
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body class="menu-page">
+    <div class="opening-hours">
+        Mon - Sat: 9AM - 9PM &nbsp; 
+    </div>
+
+    <div class="floating-logo">
+        <h1>CHRUP! <span>Nie gadaj</span></h1>
+    </div>
+
+    <div class="content">
+        <header class="main-header">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="#contact-section">RESERVATION</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.pyszne.pl/menu/chrup-nie-gadaj-ch-gemini-park" target="_blank">
+                <div class="cart-icon" id="cart-icon">🛒</div>
+            </a>
+
+        </header>
+
+      <!-- Koszyk -->
+     
+          <div id="cart-modal" class="modal">
+          <div class="modal-content">
+          <span class="close close-cart">&times;</span>
+          <h2>Twój koszyk</h2>
+          <div id="cart-items"></div>
+        <p id="cart-total">Łączna cena: 0.00 zł</p>
+      </div>
+    </div>
+
+          
+
+
+        </div>
+    </div>
+
+        <section class="menu-section">
+            <h2>Our Menu</h2>
+            <div class="menu-list"> 
+              
+            </div>
+        </section>
+    </div>
+
+      
+        <div id="item-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="document.getElementById('item-modal').style.display='none'">&times;</span>
+                <h2 id="item-modal-name"></h2>
+                <p id="item-modal-description"></p>
+                <p id="item-modal-price"></p>
+                <div id="item-modal-quantity"></div>
+                <button id="add-to-cart-modal-button">Dodaj do koszyka</button>
+            </div>
+        </div>
+        
+   
+            
+   
+<section id="contact-section" class="contact-section">
+    <div class="contact-column">
+        <h3>Contact</h3>
+        <p>kontakt@chrupniegadaj.com<br>733 555 309</p>
+        <p>Leszczyńska 20<br>Bielsko-Biała</p>
+    </div>
+    <div class="center-column">
+        <h2>#CHRUPniegadaj</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61554590644794">Facebook</a> • 
+            <a href="https://www.instagram.com/chrup_niegadaj/">Instagram</a>
+        </div>
+        <button class="reservation-button" onclick="openReservationModal()">Reservation</button>
+    </div>
+    <div class="service-column">
+        <h3>Service</h3>
+        <p>Mon - Sat: 9am - 9pm<br>Sun: closed</p>
+    </div>
+</section>
+
+<!-- Modal na rezerwację -->
+<div id="reservation-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeReservationModal()">&times;</span>
+        <h2>Rezerwacja stolika</h2>
+        <form id="reservation-form">
+            <label for="name">Imię i nazwisko:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefon:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="date">Data rezerwacji:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Godzina rezerwacji:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Liczba gości:</label>
+            <input type="number" id="guests" name="guests" required>
+
+            <button type="submit">Zarezerwuj</button>
+        </form>
+        <p id="reservation-message"></p>
+    </div>
+</div>
+
+    <section class="map-section">
+        <div id="map"></div>
+    </section>
+
+    <!-- Skrypty JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> 
+    <script src="js/menu.js"></script> 
+    <script src="js/reservation.js"></script>
+    <script src="js/scripts.js"></script> 
+
+   
+</body>
+</html>

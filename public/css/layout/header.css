@@ -1,0 +1,99 @@
+.main-header {
+    background-color: #ffffff; 
+    padding: 10px 0;
+    position: fixed; 
+    top: 35px; 
+    left: 0;
+    width: 100%;
+    z-index: 999; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    z-index: 999;
+}
+
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.main-nav ul li a {
+    color: #e57373;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.floating-logo {
+    position: fixed; 
+    top: 55px; 
+    left: 20px; 
+    z-index: 1001; 
+    font-size: 2rem;
+    color: #678892;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none; 
+    border: none; 
+   
+}
+.floating-logo span {
+    font-size: 0.8rem; 
+    color: #678892; 
+    display: block; 
+    letter-spacing: 0.1rem; 
+    margin-top: -5px; 
+    background: none; 
+    text-align:center; 
+   
+}
+
+.opening-hours {
+    background-color: #e57373;
+    color: #cf380a;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    position: fixed;
+    top: 50px; 
+    left: 20px; 
+    z-index: 1000; 
+}
+
+.logo span {
+    font-size: 0.8rem; 
+    color: #ffab91;
+    letter-spacing: 0.2rem; 
+    margin-top: -5px; 
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}

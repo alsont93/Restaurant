@@ -1,0 +1,115 @@
+/* Styl dla sekcji kontaktowej */
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    color: #e57373;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.contact-column, .center-column, .service-column {
+    flex: 1;
+    max-width: 300px;
+}
+
+.contact-column h3, .center-column h2, .service-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.center-column h2 {
+    font-size: 2rem;
+    /* font-family: 'Georgia', serif; */
+}
+
+.social-links a {
+    color: #e57373;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.reservation-button {
+    background-color: #e57373;
+    color: #f6f7f8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.reservation-button:hover {
+    background-color: #ec8c8c;
+}
+
+/* Styl dla okna modalnego */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    color: #333;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-content form label {
+    font-weight: bold;
+    color: #555;
+}
+
+.modal-content form input,
+.modal-content form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modal-content form button {
+    background-color: #ee6969;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.modal-content form button:hover {
+    background-color: #e57373;
+}

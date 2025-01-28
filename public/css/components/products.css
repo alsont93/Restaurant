@@ -1,0 +1,61 @@
+/* Stylizacja kontenera na produkty */
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    max-width: 100%; 
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+
+.product-item {
+    position: relative;
+    flex: 1 1 40%; 
+    max-width: 500px; 
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+}
+
+
+.product-item img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+
+/* Efekt powiększenia najechania kursorem */
+.product-item:hover img {
+    transform: scale(1.1);
+}
+
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+    font-style: Thin 100;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    pointer-events: none; 
+}
+
+
+.product-item:hover .product-overlay {
+    opacity: 1;
+}

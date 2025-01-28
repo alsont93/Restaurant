@@ -1,0 +1,51 @@
+.about-image-container {
+    position: relative; 
+    height: 100vh; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-image-container img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+    object-position: center; 
+    transform: translateZ(0);
+    will-change: transform; 
+    background-attachment: fixed; 
+}
+
+.about h2 {
+    font-size: 1.2rem;
+    color: #e57373;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 30px;
+    font-weight: normal;
+    position: relative;
+    display: inline-block;
+}
+
+.about h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #e57373;
+    margin: 8px auto 0; 
+}
+
+.about p {
+    
+    font-size: 1.6rem;
+    line-height: 1.8;
+    max-width: 1100px;
+    margin: 0 auto 150px; 
+    color: #333;
+    font-weight: 400;
+    padding: 0 20px;
+    
+}

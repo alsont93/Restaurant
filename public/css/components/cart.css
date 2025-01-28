@@ -1,0 +1,35 @@
+.cart-icon {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #e91e63;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.admin-icon {
+    position: fixed;
+    top: 50px;
+    right: 80px; 
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #e57373;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.admin-icon:hover {
+    transform: scale(1.2); 
+}
+
+.cart-icon:hover{
+    transform: scale(1.2);
+}

@@ -1,0 +1,76 @@
+.instagram-section h2 {
+    font-size: 1.2rem;
+    color: #e57373;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 30px;
+    font-weight: normal;
+    position: relative;
+    display: inline-block;
+}
+
+.instagram-section h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #e57373;
+    margin: 8px auto 0;
+}
+
+.instagram-section a {
+    color: #e57373;
+    text-decoration: none;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px; 
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.instagram-grid a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.instagram-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.instagram-grid a:hover img {
+    transform: scale(1.1);
+}
+
+.instagram-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: Thin 100;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    pointer-events: none; 
+}
+
+.instagram-grid a:hover .instagram-overlay {
+    opacity: 1;
+}

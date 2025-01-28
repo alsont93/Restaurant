@@ -1,0 +1,61 @@
+/* Stylizacja dla sekcji "Contact Us" */
+.reservation-section {
+    max-width: 100%;
+    padding: 50px 20px;
+    background-color: #130f0f;
+    color: #030000;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.reservation-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.reservation-subtitle {
+    font-size: 0.9rem;
+    color: #e0d4c1;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    margin-bottom: 40px;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-option {
+    background-color: #b6996e; /* Kolor tła dla każdego bloku */
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-option p {
+    font-size: 1rem;
+    margin: 10px 0 0;
+    color: #ffffff;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-options {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .contact-option {
+        width: 90%;
+    }
+}
